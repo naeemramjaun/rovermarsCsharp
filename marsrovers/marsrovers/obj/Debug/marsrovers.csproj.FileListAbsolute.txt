@@ -1,0 +1,6 @@
+c:\users\nramjaun\documents\visual studio 2013\Projects\marsrovers\marsrovers\bin\Debug\marsrovers.exe.config
+c:\users\nramjaun\documents\visual studio 2013\Projects\marsrovers\marsrovers\obj\Debug\marsrovers.csprojResolveAssemblyReference.cache
+c:\users\nramjaun\documents\visual studio 2013\Projects\marsrovers\marsrovers\bin\Debug\marsrovers.exe
+c:\users\nramjaun\documents\visual studio 2013\Projects\marsrovers\marsrovers\bin\Debug\marsrovers.pdb
+c:\users\nramjaun\documents\visual studio 2013\Projects\marsrovers\marsrovers\obj\Debug\marsrovers.exe
+c:\users\nramjaun\documents\visual studio 2013\Projects\marsrovers\marsrovers\obj\Debug\marsrovers.pdb
