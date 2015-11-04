@@ -137,5 +137,105 @@ namespace UnitTestProject1
             Assert.IsNotNull(rover);
         }
 
+
+        //NORMAL TEST FOR PLATEAU
+        [TestMethod]
+        public void testSetplateauXlength()
+        {
+            //Arrange 
+            plateau plateau = new plateau();
+            //Act
+            plateau.setplateauXlength(5);
+            //Assert
+            Assert.IsTrue(plateau.getplateauXlength() == 5);
+        }
+       
+        [TestMethod]
+        public void testGetplateauXlength()
+        {
+            //Arrange 
+            plateau plateau = new plateau();
+            //Act 
+            plateau.getplateauXlength();
+            //Assert 
+            Assert.IsTrue(plateau.getplateauXlength() == 0);
+        }
+         [TestMethod]
+        public void testSetplateauYlength()
+        {
+            //Arrange 
+            plateau plateau = new plateau();
+            //Act
+            plateau.setplateauYlength(15);
+            //Assert
+            Assert.IsTrue(plateau.getplateauYlength() == 15);
+        }
+       
+        [TestMethod]
+         public void testGetplateauYlength()
+         {
+             //Arrange 
+             plateau plateau = new plateau();
+             //Act 
+             plateau.getplateauYlength();
+             //Assert 
+             Assert.IsTrue(plateau.getplateauYlength() == 0);
+         }
+
+        //ABNORMAL TEST FOR PLATEAU
+        [TestMethod]
+        public void testSetPlateauXAbnormal()
+        {
+            //Arrange 
+            plateau plateau = new plateau();
+            //Act 
+            plateau.setplateauXlength(999999999);
+            //Assert
+            Assert.IsTrue(plateau.getplateauXlength() == 999999999);
+        }
+        
+        
+        [TestMethod]
+        [ExpectedException(typeof(FormatException))]
+        public void testSetPlateauXAbnormalString()
+        {
+            //Arrange 
+            plateau plateau = new plateau();
+            //Act 
+            int a = int.Parse("abc");
+            plateau.setplateauXlength(a);
+            //Assert
+            Assert.IsTrue(plateau.getplateauXlength() == a);
+        }
+
+
+
+        [TestMethod]
+        [ExpectedException(typeof(FormatException))]
+        public void testSetPlateauXAbnormalSymbol()
+        {
+            //Arrange
+            plateau plateau = new plateau();
+            //Act 
+            int a = int.Parse("#%$^&^%$^%");
+            plateau.setplateauXlength(a);
+            //Assert
+            Assert.IsTrue(plateau.getplateauXlength() == a);
+        }
+       
+        
+        [TestMethod]
+        [ExpectedException(typeof(FormatException))]
+        public void testSetPlateauXAbnormalIsNull(){
+         //Arrange
+         plateau plateau = new plateau () ;
+         //Act 
+         int a = int.Parse("");
+         plateau.setplateauXlength(a);
+         //Assert
+         Assert.IsTrue(plateau.getplateauXlength() == a);
+
+         }
+
     }
 }

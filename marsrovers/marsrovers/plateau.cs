@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace marsrovers
 {
-    class plateau
+    public class plateau
     {
         int plateauXcood;
         int plateauYcood;
